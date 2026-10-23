@@ -1,0 +1,44 @@
+@import "tailwindcss";
+
+/* Design tokens repris de la maquette HTML du Revenu. */
+@theme {
+  --color-brand: #eb0f0f;
+  --color-brand-hover: #d00d0d;
+  --color-brand-soft: #ffeceb;
+  --color-brand-text: #e00b0b;
+  --color-canvas: #f5f5f7;
+  --color-surface: #ffffff;
+  --color-surface-2: #f2f2f4;
+  --color-line: #e5e5ea;
+  --color-line-strong: #c7c7cc;
+  --color-ink: #1d1d1f;
+  --color-ink-2: #424245;
+  --color-ink-3: #6e6e73;
+  --color-ok: #1a8a4a;
+  --color-ok-soft: #e4f6ea;
+  --font-display: var(--font-playfair), Georgia, "Times New Roman", serif;
+  --font-sans: var(--font-inter), system-ui, -apple-system, "Segoe UI", sans-serif;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  background: var(--color-canvas);
+  color: var(--color-ink);
+  font-family: var(--font-sans);
+  -webkit-font-smoothing: antialiased;
+}
+
+:focus-visible {
+  outline: 2px solid var(--color-brand);
+  outline-offset: 2px;
+}
+
+.hide-scrollbar {
+  scrollbar-width: none;
+}
+.hide-scrollbar::-webkit-scrollbar {
+  display: none;
+}

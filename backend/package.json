@@ -1,0 +1,49 @@
+{
+  "name": "lerevenu-backend",
+  "version": "0.1.0",
+  "private": true,
+  "description": "A Strapi application",
+  "scripts": {
+    "build": "strapi build",
+    "console": "strapi console",
+    "deploy": "strapi deploy",
+    "dev": "strapi develop",
+    "develop": "strapi develop",
+    "start": "strapi start",
+    "strapi": "strapi",
+    "upgrade": "npx @strapi/upgrade latest",
+    "upgrade:dry": "npx @strapi/upgrade latest --dry",
+    "test": "jest --runInBand --forceExit",
+    "develop:sqlite": "cross-env DATABASE_CLIENT=sqlite DATABASE_FILENAME=.tmp/data.db strapi develop",
+    "start:sqlite": "cross-env DATABASE_CLIENT=sqlite DATABASE_FILENAME=.tmp/data.db strapi start",
+    "db:demo": "node scripts/use-demo-db.js"
+  },
+  "dependencies": {
+    "@strapi/database": "5.59.0",
+    "@strapi/plugin-cloud": "5.59.0",
+    "@strapi/plugin-users-permissions": "5.59.0",
+    "@strapi/strapi": "5.59.0",
+    "better-sqlite3": "12.11.1",
+    "react": "^18.0.0",
+    "react-dom": "^18.0.0",
+    "react-router-dom": "^6.30.3",
+    "styled-components": "^6.0.0"
+  },
+  "devDependencies": {
+    "@types/node": "^20",
+    "@types/react": "^18",
+    "@types/react-dom": "^18",
+    "cross-env": "^10.1.0",
+    "jest": "^30.5.2",
+    "supertest": "^7.3.1",
+    "typescript": "^5"
+  },
+  "engines": {
+    "node": ">=20.0.0 <=26.x.x",
+    "npm": ">=6.0.0"
+  },
+  "strapi": {
+    "uuid": "a8e2c2e4-6b89-44c7-8241-61c14a68b22a",
+    "installId": "2df3e48c2df6735d241e4ae7fbd75b550c8db65b4d7cccabc4100080b0d765eb"
+  }
+}
